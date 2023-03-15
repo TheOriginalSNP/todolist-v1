@@ -1,12 +1,13 @@
 //jshint esversion:6
 
+const path = require('path')
 const express = require("express");
 const app = express();
 const bodyParser = require("body-parser");
 const items = ["Buy Food"];
 app.set("view engine", "ejs");
 
-//app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(bodyParser.urlencoded({
     extended: true
@@ -39,3 +40,4 @@ app.post("/", function (req, res) {
 app.listen(3000, function () {
     console.log("Sever 3000 up and running!");
 });
+
