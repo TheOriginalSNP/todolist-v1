@@ -2,12 +2,14 @@ html {
   background-color: #E4E9FD;
   background-image: -webkit-linear-gradient(65deg, #A683E3 50%, #E4E9FD 50%);
   min-height: 1000px;
-  font-family: 'helvetica neue';
+  font-family: 'Raleway', sans-serif;
+  font-weight: normal;
 }
 
 h1 {
   color: #fff;
   padding: 10px;
+  font-weight: bold;
 }
 
 .box {
@@ -47,7 +49,7 @@ p {
   margin: 0;
   padding: 20px;
   font-size: 20px;
-  font-weight: 200;
+
   color: #00204a;
 }
 
